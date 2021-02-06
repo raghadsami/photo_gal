@@ -1,17 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+    <div class="ion-text-right">
+
+      <img src="assets/blue2.png">
+    </div>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-toolbar>
+    <div class="ion-text-center">
+      <h1><b>MyEvents</b></h1> 
+    </div>
+
+  </ion-toolbar>
+
+  <ion-searchbar showCancelButton="focus" cancelButtonText="Cancel"></ion-searchbar>
+
+  <div class="ion-text-center">
+    <ion-button (click)="btnClicked()" routerLinks="/chattting" > <img src="assets/11.png" > </ion-button>
+    <ion-button (click)="btnClicked()" routerLinks="/chattting" > <img src="assets/12.png"> </ion-button>
+    <ion-button (click)="btnClicked()" routerLinks="/chattting" > <img src="assets/15.png"> </ion-button>
+    <ion-button (click)="btnClicked()" routerLinks="/chattting" > <img src="assets/16.png"> </ion-button>
+    <ion-button (click)="btnClicked()" routerLinks="/chattting" > <img src="assets/14.png"> </ion-button>
+    <ion-button (click)="btnClicked()" routerLinks="/chattting" > <img src="assets/13.png"> </ion-button>
+
+  </div>
+
+
 </ion-content>
